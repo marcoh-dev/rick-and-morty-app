@@ -19,6 +19,7 @@ body {
   font-family: var(--font-family);
   color: var(--color-primary);
   padding: 20px;
+  background-color: rgb(168, 203, 132);
 }
 
 main {
