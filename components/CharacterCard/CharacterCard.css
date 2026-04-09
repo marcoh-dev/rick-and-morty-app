@@ -1,9 +1,16 @@
 .card-container {
   margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
 }
+
 .card {
   width: 300px;
   background-color: var(--color-secondary);
+  border: 2px solid black;
+  box-shadow: 4px 4px 10px rgb(61, 62, 61);
+  border-radius: 10px;
 }
 
 .card__info {
@@ -22,4 +29,16 @@
 
 li {
   list-style: none;
+}
+
+.card__image {
+  display: flex;
+  justify-self: center;
+  border-radius: 10px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.card__title {
+  text-align: center;
 }
