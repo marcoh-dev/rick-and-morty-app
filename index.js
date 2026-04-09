@@ -19,16 +19,20 @@ let page = 1;
 let searchQuery = "";
 
 async function fetchCharacters() {
-  const response = await fetch(
-    `https://rickandmortyapi.com/api/character/?page=${page}&name=${searchQuery}`,
-  );
-  const data = await response.json();
-  maxPage = data.info.pages;
-  pagination.textContent = `${page} / ${maxPage}`;
-  cardContainer.innerHTML = "";
-  data.results.forEach((result) => {
-    cardContainer.append(createCharacterCard(result));
-  });
+  try {
+    const response = await fetch(
+      `https://rickandmortyapi.com/api/character/?page=${page}&name=${searchQuery}`,
+    );
+    const data = await response.json();
+    maxPage = data.info.pages;
+    pagination.textContent = `${page} / ${maxPage}`;
+    cardContainer.innerHTML = "";
+    data.results.forEach((result) => {
+      cardContainer.append(createCharacterCard(result));
+    });
+  } catch (error) {
+    console.log(error.message);
+  }
 }
 
 fetchCharacters();
