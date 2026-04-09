@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
+  justify-items: center;
 }
 
 .card {
@@ -37,7 +38,7 @@ li {
   justify-self: center;
   border-radius: 10px;
   width: 200px;
-  margin-top: 20px;
+  margin: 20px auto 0;
 }
 
 .card__title {
