@@ -30,3 +30,17 @@ main {
 .title {
   padding: 10px 0;
 }
+
+button {
+  cursor: pointer;
+}
+
+input[disabled],
+button[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.card--error {
+  color: red;
+}
