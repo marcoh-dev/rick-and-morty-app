@@ -22,6 +22,10 @@ body {
   background-color: rgb(168, 203, 132);
 }
 
+.app-wrap {
+  margin: 0 auto;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -30,6 +34,7 @@ main {
 
 .title {
   padding: 10px 0;
+  text-align: center;
 }
 
 button {
