@@ -85,18 +85,33 @@ async function fetchCharacters() {
         cardContainer.append(CharacterCard(result));
       });
     } else {
+      //throw new Error("Could not find a character matching the search string");
       console.log("response not ok");
       page = 1;
       maxPage = 1;
-      pagination.textContent = ``;
+      document.querySelector('[data-js="pagination"]').textContent = ``;
+
+      cardContainer.innerHTML = `<li class="card card--error">Could not find a character matching the search string</li>`;
     }
     handleDisabledButtons(page, maxPage);
   } catch (error) {
+    console.log(error);
+
+    cardContainer.innerHTML = `<li class="card card--error">Network error: Too many requests. <br>Trying again automatically in 5 seconds</li>`;
+    setTimeout(function () {
+      fetchCharacters();
+    }, 5000);
+
+    /*
+    console.log("test", error);
+    console.log("test", error.message);
     console.log("catch error");
     page = 1;
     maxPage = 1;
     cardContainer.innerHTML = `<li class="card card--error">${error.message}</li>`;
     handleDisabledButtons(page, maxPage);
+
+    */
   }
   window.scrollTo({ top: 0 });
 }
