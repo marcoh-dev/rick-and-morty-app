@@ -1,6 +1,8 @@
 export default function CharacterCard(characterData) {
   const characterCard = document.createElement("li");
   characterCard.classList.add("card");
+  characterCard.classList.add("card--status-" + characterData.status.toLowerCase());
+
   characterCard.innerHTML = `
              <div class="card__image-container">
             <img
