@@ -1,12 +1,12 @@
 .search-bar-container {
-  width: 300px;
+  width: 280px;
   margin: 0 auto;
 }
 
 .search-bar {
   padding: 10px 20px;
-  background-color: darkgreen;
-  border-radius: 10px;
+  background-color: rgb(62, 132, 62);
+  border-radius: var(--border-radius);
   display: grid;
   grid-template-columns: 1fr 24px;
 }
@@ -14,11 +14,11 @@
 .search-bar__input {
   background-color: transparent;
   border: none;
-  color: white;
+  color: var(--color-secondary);
 }
 
 .search-bar__input::placeholder {
-  color: rgb(195, 197, 194);
+  color: var(--color-tertiary);
 }
 
 .search-bar__button {
