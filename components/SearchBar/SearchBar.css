@@ -24,6 +24,7 @@
 .search-bar__button {
   border: none;
   background-color: transparent;
+  filter:invert(1);
 }
 
 .search-bar__input:focus {
