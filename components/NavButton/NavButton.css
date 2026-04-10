@@ -2,6 +2,6 @@
   border: none;
 }
 
-.button:hover {
+.button:not(:disabled):hover {
   background-color: var(--color-secondary);
 }
