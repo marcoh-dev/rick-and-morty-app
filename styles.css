@@ -12,14 +12,21 @@
 :root {
   --color-primary: rgb(51, 51, 51);
   --color-secondary: #f6f6f6;
+  --color-tertiary: rgb(169, 210, 128);
+  --color-quaternary: salmon;
   --font-family: system-ui;
+  --border-radius: 10px;
 }
 
 body {
   font-family: var(--font-family);
   color: var(--color-primary);
   padding: 20px;
-  background-color: rgb(168, 203, 132);
+  background-color: var(--color-tertiary);
+}
+
+.app-wrap {
+  margin: 0 auto;
 }
 
 main {
@@ -29,7 +36,16 @@ main {
 }
 
 .title {
+  position: sticky;
   padding: 10px 0;
+  text-align: center;
+  background-color: rgba(var(--color-tertiary), 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: var(--border-radius);
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 10;
 }
 
 button {
