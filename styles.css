@@ -24,7 +24,13 @@ body {
   padding: 20px;
   background-color: var(--color-tertiary);
 }
-
+.image {
+  position: fixed;
+  z-index: -3;
+  left: -80px;
+  top: 0px;
+  filter: blur(5px);
+}
 .app-wrap {
   margin: 0 auto;
   max-width: 1480px;
