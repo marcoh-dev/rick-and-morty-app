@@ -22,8 +22,22 @@
 }
 
 .card:hover {
+  transition:
+    background-color 0.25s ease-out,
+    color 0.25s ease-out;
+}
+
+.card--status-alive:hover {
+  background-color: rgb(125, 212, 125);
+}
+
+.card--status-unknown:hover {
+  background-color: rgb(106, 175, 255);
+  color: #fff;
+}
+
+.card--status-dead:hover {
   background-color: var(--color-quaternary);
-  transition: background-color 0.25s ease-out;
 }
 
 .card__info {
