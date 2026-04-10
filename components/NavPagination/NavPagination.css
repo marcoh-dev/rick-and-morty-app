@@ -20,6 +20,6 @@
   border-radius: 10px;
 }
 
-.button:hover {
+.button:not(:disabled):hover {
   background-color: rgb(82, 77, 77);
 }
