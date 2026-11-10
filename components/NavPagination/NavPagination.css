@@ -1,17 +1,17 @@
 .navigation {
-  display: flex;
-  position: fixed;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  height: 30px;
-  width: 280px;
-  background-color: rgb(247, 161, 152);
-  border-radius: var(--border-radius);
-  justify-self: center;
-  justify-content: space-between;
+	display: flex;
+	position: fixed;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	height: 30px;
+	width: 280px;
+	background-color: rgb(247, 161, 152);
+	border-radius: var(--border-radius);
+	justify-self: center;
+	justify-content: space-between;
 }
 
 .navigation__pagination {
-  align-self: center;
+	align-self: center;
 }

@@ -1,9 +1,9 @@
 export default function SearchBar() {
-  const searchBar = document.createElement("form");
-  searchBar.classList.add("search-bar");
-  searchBar.dataset.js = "search-bar";
-  searchBar.action = "";
-  searchBar.innerHTML = `
+	const searchBar = document.createElement("form");
+	searchBar.classList.add("search-bar");
+	searchBar.dataset.js = "search-bar";
+	searchBar.action = "";
+	searchBar.innerHTML = `
         <input
         name="query"
         class="search-bar__input"
@@ -17,5 +17,5 @@ export default function SearchBar() {
         </button>
     `;
 
-  return searchBar;
+	return searchBar;
 }
