@@ -9,5 +9,8 @@
   "parserOptions": {
     "sourceType": "module"
   },
-  "plugins": ["jest"]
+  "plugins": ["jest"],
+  "settings": {
+    "jest": { "version": 29 }
+  }
 }
