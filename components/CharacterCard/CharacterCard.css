@@ -1,71 +1,71 @@
 .card-container {
-  margin-bottom: 40px;
-  gap: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+	margin-bottom: 40px;
+	gap: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .card {
-  width: 280px;
-  background-color: var(--color-secondary);
-  border: 2px solid var(--color-primary);
-  box-shadow: 4px 4px 10px rgb(61, 62, 61);
-  border-radius: var(--border-radius);
-  box-sizing: border-box;
+	width: 280px;
+	background-color: var(--color-secondary);
+	border: 2px solid var(--color-primary);
+	box-shadow: 4px 4px 10px rgb(61, 62, 61);
+	border-radius: var(--border-radius);
+	box-sizing: border-box;
 }
 
 .card--error {
-  color: red;
-  padding: 20px;
+	color: red;
+	padding: 20px;
 }
 
 .card:hover {
-  transition:
-    background-color 0.25s ease-out,
-    color 0.25s ease-out;
+	transition:
+		background-color 0.25s ease-out,
+		color 0.25s ease-out;
 }
 
 .card--status-alive:hover {
-  background-color: rgb(125, 212, 125);
+	background-color: rgb(125, 212, 125);
 }
 
 .card--status-unknown:hover {
-  background-color: rgb(106, 175, 255);
-  color: #fff;
+	background-color: rgb(106, 175, 255);
+	color: #fff;
 }
 
 .card--status-dead:hover {
-  background-color: var(--color-quaternary);
+	background-color: var(--color-quaternary);
 }
 
 .card__info {
-  display: grid;
-  grid-template-columns: auto 1fr;
+	display: grid;
+	grid-template-columns: auto 1fr;
 }
 .card__content {
-  padding: 10px 20px 20px;
-  display: grid;
-  gap: 20px;
+	padding: 10px 20px 20px;
+	display: grid;
+	gap: 20px;
 }
 
 .card__info-description {
-  text-align: right;
+	text-align: right;
 }
 
 li {
-  list-style: none;
+	list-style: none;
 }
 
 .card__image {
-  display: flex;
-  justify-self: center;
-  border-radius: var(--border-radius);
-  width: 200px;
-  margin: 20px auto 0;
+	display: flex;
+	justify-self: center;
+	border-radius: var(--border-radius);
+	width: 200px;
+	margin: 20px auto 0;
 }
 
 .card__title {
-  text-align: center;
+	text-align: center;
 }

@@ -19,9 +19,9 @@ We will fetch all character information from a REST API specifically designed fo
 - Open your terminal and navigate to the folder where all your projects are located.
 - Execute the following command to create a new project based on a template:
 
-  ```bash
-  pnpm dlx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/recap-project-3/rick-and-morty-app -i
-  ```
+    ```bash
+    pnpm dlx ghcd@latest wd-bootcamp/web-exercises/tree/main/sessions/recap-project-3/rick-and-morty-app -i
+    ```
 
 - Create a new empty repository on GitHub and add everybody in your group as collaborator.
 - Link your remote repository to the created repository on your computer and push the code.
@@ -61,10 +61,10 @@ Right now, the `CharacterCard` function always returns the character Rick Sanche
 
 - Modify the `CharacterCard` function in `CharacterCard.js` to accept the character data as an argument.
 - Ensure that the following elements of the card dynamically update based on the character data:
-  - the src of the image,
-  - the name of the character,
-  - the status, type and occurrences.
-    > 💡 Hint: The occurrences can be derived from another key in the character object.
+    - the src of the image,
+    - the name of the character,
+    - the status, type and occurrences.
+        > 💡 Hint: The occurrences can be derived from another key in the character object.
 - Switch to the `index.js`.
 - Remove the `console.log` and the single appended `CharacterCard`.
 - Update the `fetchCharacters` function to use an array method to create a character card for each character and append it to the `cardContainer`.
@@ -79,9 +79,9 @@ Great Job! But we want to see not only 20 characters, we want all of them! So le
 - Use the state variable `page` to keep track of the current page index.
 - Inside of the `info` part of the received data you can find the max page count.
 - Add an event listener on each of the next and prev buttons which do the following:
-  - it is prevented that the page index could go higher than the max page index or below 1,
-  - the page index is increased / decreased,
-  - the `fetchCharacters` function is called.
+    - it is prevented that the page index could go higher than the max page index or below 1,
+    - the page index is increased / decreased,
+    - the `fetchCharacters` function is called.
 - Update the pagination display each time characters are fetched to show the current page and the current max page.
 
 ### 5. The Search Bar

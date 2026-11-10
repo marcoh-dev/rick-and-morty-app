@@ -1,29 +1,40 @@
 {
-  "name": "recap-project-3_rick-and-morty-app",
-  "version": "0.0.0-unreleased",
-  "description": "",
-  "main": "index.html",
-  "scripts": {
-    "lint": "eslint .",
-    "test": "NODE_OPTIONS=--experimental-vm-modules pnpm dlx jest@latest --watchAll",
-    "start": "pnpm dlx live-server@latest --port=3000"
-  },
-  "nf": {
-    "template": "html-css-js"
-  },
-  "type": "module",
-  "devDependencies": {
-    "@babel/core": "^7.22.5",
-    "@types/jest": "^29.5.2",
-    "eslint-plugin-jest": "^27.2.2",
-    "eslint": "^8.43.0"
-  },
-  "packageManager": "pnpm@12.18.0",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^12.18.0",
-      "onFail": "download"
-    }
-  }
+	"name": "recap-project-3_rick-and-morty-app",
+	"version": "0.0.0-unreleased",
+	"description": "",
+	"main": "index.html",
+	"type": "module",
+	"engines": {
+		"node": "24.x"
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"check": "pnpm lint && pnpm format:check",
+		"start": "vite --port 3000 --open",
+		"sync": "git switch main && git pull && pnpm install",
+		"sync:branch": "git fetch origin && git merge --no-commit origin/main && pnpm install"
+	},
+	"nf": {
+		"template": "html-css-js"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.39.5",
+		"eslint": "^9.39.5",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-import": "^2.32.0",
+		"globals": "^17.14.0",
+		"prettier": "^3.9.10",
+		"vite": "^8.3.7"
+	},
+	"packageManager": "pnpm@12.18.0",
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "^12.18.0",
+			"onFail": "download"
+		}
+	}
 }
